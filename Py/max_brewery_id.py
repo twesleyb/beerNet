@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
-Function to get maximum brewery id on beeradvocate.com.
+A function to find the maximum brewery ID on beeradvocate.com.
+Brewery IDs are just integers of increasing value.
+The function simply starts searching at a given number, and continues
+until it hits an error.
 """
 
 import requests

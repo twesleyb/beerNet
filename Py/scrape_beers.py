@@ -6,7 +6,7 @@ import pandas as pd
 
 def scrape_beers(brewery_id):
     """
-    Collect summary beer data from a given brewery on beeradvocate.com.
+    Collect summary beer data for a given brewery on beeradvocate.com.
     """
     BASE_URL = "https://www.beeradvocate.com/beer/profile/{}/?view=beers&show=all"
     # Parse the webpage.

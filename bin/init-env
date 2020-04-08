@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Create conda virtual environment.
+conda create -n getBeer python ipython beautifulsoup4 
