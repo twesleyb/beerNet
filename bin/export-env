@@ -1,6 +1,9 @@
 #!/bin/bash
 
+# Name of virtual environment.
+ENV="beerNet"
+
 # Export a virtual environment.
 source ~/anaconda3/etc/profile.d/conda.sh
-conda activate beerNet
+conda activate $ENV
 conda env export > ../venv.yml
