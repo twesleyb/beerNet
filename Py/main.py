@@ -1,10 +1,19 @@
 #!/usr/bin/env python3
 
-from sys import stderr
 import requests
-from bs4 import BeautifulSoup
 import pandas as pd
+from sys import stderr
+from bs4 import BeautifulSoup
 from progressbar import ProgressBar
+
+import os
+import sys
+
+here = os.getcwd()
+root = os.path.dirname(here)
+sys.path.append(root)
+
+from Py import max_brewery_id
 
 #--------------------------------------------------------------------
 ## Find maximum brewery ID.
