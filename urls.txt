@@ -1,0 +1,2 @@
+https://anaconda.org/anaconda/queuelib
+https://github.com/scrapy/queuelib

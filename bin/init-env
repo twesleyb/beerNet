@@ -1,4 +1,21 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# Create conda virtual environment.
-conda create -n beerNet
+## Steps to creating a python research environment.
+# 1. Create conda env.
+# 2. Activate that environment, install ipython.
+# 3. Install dependencies.
+# 4. Export the environment as a yaml file.
+
+## ARGUMENTS:
+ENV_NAME=$1
+
+# Create a new conda environemnt in the current directory.
+env-init $ENV_NAME
+ca $ENV_NAME
+
+# Install dependencies.
+conda install --yes -c anaconda ipython numpy pandas beautifulsoup4
+conda install --yes -c conda-forge progressbar2 leidenalg
+
+# Export yaml.
+export-env $ENV_NAME
